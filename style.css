@@ -16,6 +16,8 @@ body {
 #header {
   background-color: hsl(180, 29%, 50%);
   height: 156px;
+  width: 100%;
+  min-width: 1440px;
 }
 #header > img {
   width: 100%;
@@ -32,8 +34,80 @@ body {
   width: 100%;
   height: 180px;
   background-color: hsl(0, 0%, 100%);
-  border-radius: 4px;
+  border-radius: 8px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#jobListing .job-tile > .company-logo {
+  width: 16%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#jobListing .job-tile > .company-logo > img {
+  width: 60%;
+}
+#jobListing .job-tile > .job-description {
+  height: 100%;
+  width: 84%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 0px;
+}
+#jobListing .job-tile > .job-description > .job-type > .job-header-tags {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#jobListing .job-tile > .job-description > .job-type > .job-header-tags > p {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(180, 29%, 50%);
+}
+#jobListing .job-tile > .job-description > .job-type > .job-header-tags > .new-tag {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0px 14px;
+  padding: 6px 8px 4px 8px;
+  border-radius: 14px;
+  background-color: hsl(180, 29%, 50%);
+}
+#jobListing .job-tile > .job-description > .job-type > .job-header-tags > .featured-tag {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 15px;
+  padding: 6px 8px 4px 8px;
+  border-radius: 14px;
+  background-color: hsl(180, 14%, 20%);
+}
+#jobListing .job-tile > .job-description > .job-type > h1 {
+  margin: 14px 0px;
+}
+#jobListing .job-tile > .job-description > .job-type > h1:hover {
+  color: hsl(180, 29%, 50%);
+}
+#jobListing .job-tile > .job-description > .job-type > .job-details {
+  color: hsl(180, 8%, 52%);
+  font-weight: 500;
+}
+#jobListing .job-tile > .job-description > .job-tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px;
+}
+#jobListing .job-tile > .job-description > .job-tags > .frontend-tag {
+  margin: 0px 10px;
+  background-color: hsl(180, 31%, 95%);
+  padding: 8px;
+  font-size: 17px;
+  font-weight: 700;
+  color: hsl(180, 29%, 50%);
 }
 
 /*# sourceMappingURL=style.css.map */
