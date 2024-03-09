@@ -29,17 +29,26 @@ body{
     }
 }
 
+#jobTagFilter{
+    height: 50px;
+    margin: 70px 150px;
+    background-color: colors.$White;
+    box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.15);
+    // z-index: -1;
+}
+
 #jobListing{
-    padding: 100px 150px;
+    padding: 70px 150px;
     width: 100%;
-    height: 1000px;
+    height: auto;
 
     .job-tile{
+        margin: 26px 0px;
         width: 100%;
         height: 180px;
         background-color: colors.$White;
         border-radius: 8px;
-        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+        box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.15);
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -120,10 +129,17 @@ body{
                 > .frontend-tag{
                     margin: 0px 10px;
                     background-color: colors.$LightGrayishCyanFilterTabs;
-                    padding: 8px;
+                    padding: 10px 8px 8px 8px;
                     font-size: 17px;
                     font-weight: 700;
                     color: colors.$DesaturatedDarkCyan;
+                    border-radius: 4px;
+
+                    &:hover{
+                        background-color: colors.$DesaturatedDarkCyan;
+                        color: colors.$LightGrayishCyanFilterTabs;
+                        cursor: pointer;
+                    }
                 }
             }
         }
